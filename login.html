@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+    
+    <title>Login</title>
+</head>
+<body>
+    <section class="experience_section layout_padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="img-box">
+                <img src="images/experience-img.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="detail-box">
+                <div class="heading_container">
+                  <h2>
+                    Login
+                  </h2>
+                
+                </div><br>
+                <form method="post" action="http://localhost:8080/examples/servlets/servlet/Login">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" onblur="validate();"><br>
+                    <div id="errUsername"></div><br>
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" onblur="validate();"><br>
+                    <div id="errPassword"></div><br>
+                    
+                    <input type="submit" value="Login" class="btn-1" style="padding: 10px;">
+                </form><br><br>
+                
+                <h2><a href="registration.html" class="btn-2">Register</a> if you can't log in  </h2>
+                <!-- Navigation -->
+                
+                    
+                <!-- <div class="btn-box">
+                  <a href="" class="btn-1">
+                    Read More
+                  </a>
+                  <a href="" class="btn-2">
+                    Hire
+                  </a>
+                </div> -->
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </section>
+</body>
+</html>
