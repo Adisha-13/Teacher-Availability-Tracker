@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script>
+        function validate() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Validation for username
+            if (username.trim() === "") {
+                document.getElementById('errUsername').innerHTML = "<span style='color:red'>Please enter your username!</span>";
+                return false;
+            } else {
+                document.getElementById('errUsername').innerHTML = "";
+            }
+
+            // Validation for password
+            if (password.trim() === "") {
+                document.getElementById('errPassword').innerHTML = "<span style='color:red'>Please enter your password!</span>";
+                return false;
+            } else {
+                document.getElementById('errPassword').innerHTML = "";
+            }
+
+            return true; // Submit the form if all validations pass
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="http://localhost:8080/examples/servlets/servlet/Login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" onblur="validate();"><br>
+        <div id="errUsername"></div><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" onblur="validate();"><br>
+        <div id="errPassword"></div><br>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Navigation -->
+    <ul>
+        <li><a href="registration.html">Register</a></li>
+    </ul>
+</body>
+</html>
