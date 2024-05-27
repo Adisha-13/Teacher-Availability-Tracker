@@ -9,6 +9,11 @@ function updateStatus(selectElement) {
 
     // Add new status class
     subject.classList.add(value);
+
+    // Add default green color for "present" status
+    if (value === 'present') {
+        subject.classList.add('present');
+    }
 }
 
 // Function to save all statuses to localStorage
@@ -45,6 +50,11 @@ function loadStatus() {
             // Set the select value and apply the class
             select.value = status;
             subject.classList.add(status);
+
+            // Add default green color for "present" status
+            if (status === 'present') {
+                subject.classList.add('present');
+            }
         }
     }
 }
