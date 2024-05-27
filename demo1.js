@@ -49,5 +49,14 @@ function loadStatus() {
     }
 }
 
+// Function to reset all select elements to their default state
+function resetAllStatuses() {
+    const selects = document.querySelectorAll('select');
+    selects.forEach(select => {
+        select.value = select.firstElementChild.value;
+        updateStatus(select); // Update the status after resetting
+    });
+}
+
 // Call loadStatus when the page loads
 window.onload = loadStatus;
