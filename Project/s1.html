@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Absence Timetable</title>
+    <link rel="stylesheet" href="demo1.css"> <!-- Link to the CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .subject {
+            display: inline-block;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teacher Absence Timetable</h1>
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>8 - 9</th>
+                <th>9 - 10</th>
+                <th>10 - 11</th>
+                <th>11 - 12</th>
+                <th>12 - 1</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td data-day="Monday" data-time="8-9">
+                    <span class="subject">Math</span>
+                    <br>
+                    <select disabled>
+                        <option value="present">Present</option>
+                        <option value="delayed">Delayed</option>
+                        <option value="absent">Absent</option>
+                    </select>
+                </td>
+                <!-- Repeat for other days -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

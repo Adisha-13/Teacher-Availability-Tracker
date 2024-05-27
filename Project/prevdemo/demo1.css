@@ -1,0 +1,41 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.default-status {
+    background-color: white;
+    color: black;
+}
+
+.present {
+    background-color: green;
+    color: white;
+}
+
+.busy {
+    background-color: yellow;
+    color: black;
+}
+
+.not-available {
+    background-color: red;
+    color: white;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
